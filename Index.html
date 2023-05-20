@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons</title>
+    <style>
+        @font-face {
+            font-family:  Merriweather-Bold;
+            src: url(fonts/Merriweather-Regular.ttf);
+        }
+        body{
+            background-image: url(nature.jpg);
+            height: 100vh;
+            background-size: cover;
+        }
+        h1{
+            font-size: 60px;
+            font-family: Merriweather-Bold;
+            background: linear-gradient(to right, rgba(52, 113, 156, 0.575),rgba(183, 213, 93, 0.548));
+            width: fit-content;
+            margin: auto;
+            padding: 2vh 5vw;
+            border-radius: 10%;
+        }
+        a{
+            font-size: 48px;
+            font-family: Merriweather-Bold;
+            text-decoration: none;
+            color: rgb(69, 1, 100);
+            margin: 25px;
+            background-image: url(hand.png);
+            background-repeat: no-repeat;
+            padding-left: 50px;
+        }
+        a:hover{
+            /* background-image: none; */
+            background-position: right;
+            width:fit-content;
+            padding-right: 50px;
+        }
+        nav{
+            display:flex;
+            flex-direction: column;
+            background: linear-gradient(to right, rgb(171 82 48),rgba(52, 113, 156, 0.575),rgba(85, 154, 32, 0.473),rgba(244, 180, 42, 0.473));
+        }
+        .clock{
+            width:10vw ;
+            height:10vw ;
+            margin:auto;
+            margin-top: 5vh;
+        }
+        .dial{
+            width: 10vw;
+            height: 10vw;
+            background-color: white;
+            border-radius: 50%;
+            border: 20px groove  gray;
+            transform: rotate(45deg);
+            position: relative;
+        }
+        .seconds{
+            position: absolute;
+            top: calc(5vw - 5px);
+            left: calc(5vw - 5px);
+            width: 4vw;
+            height: 0.5vw;
+            background-color: black;
+            animation: go 60s linear infinite;
+            transform-origin: left;
+        }
+        .minutes{
+            position: absolute;
+            top: calc(5vw - 5px);
+            left: calc(5vw - 5px);
+            width: 3vw;
+            height: 0.5vw;
+            background-color: black;
+            animation: go 3600s linear  infinite;
+            transform-origin: left;transform-origin: left;
+        }
+        .marusia{
+            position: absolute;
+            top: calc(5vw - 10px);
+            left: calc(5vw - 10px);
+            width: 1vw;
+            height: 1vw;
+            background-color: black;
+            border-radius: 50%;
+        }
+@keyframes go{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform:rotate(360deg)
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>Seasons 2023...</h1>
+    <nav>
+        <a href="autumn.html">Autumn</a>
+        <a href="winter.html">Winter </a>
+        <a href="spring.html">Spring</a>
+        <a href="summer.html">Summer</a>
+    </nav>
+    <div class="clock">
+        <div class="dial">
+        <div class="minutes"></div>
+        <div class="seconds"></div>
+        <div class="marusia"></div>
+    </div>
+    </div>       
+</body>
+</html>

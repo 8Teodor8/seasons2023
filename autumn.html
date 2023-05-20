@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style autumn.css">
+    <title>autumn</title>
+    <script>
+        function runboat(){
+            if (document.querySelector(".signs").getBoundingClientRect().top<0) {
+            document.querySelector("#boat").classList.add("boatanim")
+            }
+        }
+    </script>
+</head>
+<body onscroll="runboat()">
+
+<header>
+    <h1>Autumn 2023</h1>
+    <p class="poem"> 
+    <span style="margin-bottom: 20px; font-weight: bold;">Fall, Leaves, Fall <br>
+Emily Bronte<br></span><br>
+
+Fall, leaves, fall; die, flowers, away;<br>
+Lengthen night and shorten day;<br>
+Every leaf speaks bliss to me<br>
+Fluttering from the autumn tree.<br>
+I shall smile when wreaths of snow<br>
+Blossom where the rose should grow;<br>
+I shall sing when night’s decay<br>
+Ushers in a drearier day.<br>
+    </p>
+    <p class="poem2"> 
+    <span style="margin-bottom: 20px; font-weight: bold;">Plums<br>
+Gillian Clarke <br></span><br>
+
+When their time comes they fall <br>
+without wind, without rain.<br>
+They seep through the trees’ muslin<br>
+in a slow fermentation.<br>
+Daily the low sun warms them<br>
+in a late love that is sweeter<br>
+than summer. In bed at night<br>
+we hear heartbeat of fruitfall.<br>
+    </P>
+</header>
+<section class="calendar">
+    <div class="filtr">
+    <table id="calendar1">
+        <caption>
+        Calendar of autumn</caption>
+        <tr>
+        <td>September</td>
+        <td>31days</td>
+    </tr>
+    <tr>
+        <td>October</td>
+        <td>31days</td>
+    </tr>
+    <tr>
+        <td>November</td>
+        <td>30days</td>
+    </tr>
+    </table>
+    <table id="calendar2">
+    <caption>
+        Autumn holidays</caption>
+        <tr>
+            <td rowspan="2">September</td>
+            <td>1st</td>
+            <td>Knowledge Day </td>
+            </tr>
+            <tr>
+                <td>16th</td>
+                <td>Oktoberfest<td>
+            </tr>
+            <tr>
+               <td>Oktober</td>
+               <td>31st</td>
+               <td>Hallowen</td>
+            </tr>
+            <tr>
+                <td rowspan="2">November</td>
+                <td>4th</td>
+                <td>Day of the RF Flag </td>
+            </tr>
+            <tr>
+                <td>23d</td>
+                <td>Thanksgiving day</td>
+            </tr>
+    </table>
+</div>
+</section>
+<section class="signs" >
+    <div class="wrap">
+    <ul>
+        <li> <span>Rain-</span><audio src="rain sound.mp3"controls></audio></li>
+        <li>Harvest</li>
+        <li>Leaf fall</li>
+        <li>Cozy evenings</li>
+        <li>Thanksgiving day</li>
+     </ul>
+</div>
+<img src="sailboat.png" id="boat" alt="boat">
+</section>
+</body>
+</html>

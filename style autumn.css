@@ -1,0 +1,201 @@
+body{
+    margin:0
+}
+header{
+    background-image: url(bg-autumn.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment:fixed ;
+    padding-bottom: 100px;
+    animation: heli 5s forwards;
+    background-position: center;
+
+}
+@keyframes heli{
+from{
+    background-size: 100vw auto;
+}
+to{
+    background-size: 110vw auto;
+}
+}
+@font-face {
+    font-family: worksans;
+    src: url(fonts/autumn-letter/static/WorkSans-Regular.ttf);
+}
+.poem{
+    background-color: rgba(255, 255, 255, 0.555);
+    width: fit-content;
+    padding: 50px;
+    border-radius: 20px;
+    font-family: worksans;
+    margin-left: 50vw;
+    margin-top: 100px;
+}
+.poem2{
+    background-color: rgba(255, 255, 255, 0.555);
+    width: fit-content;
+    padding: 50px;
+    border-radius: 20px;
+    font-family: worksans;
+    margin-left: 30vw;
+    margin-top: 0px;
+}
+header h1{
+    font-family: worksans;
+    color: #ab6d25;
+    font-size: 40px;
+    margin-left: 3.5vw;
+    margin-top: 0;
+    padding-top: 15px;
+}
+.calendar{
+    background-image: url(road.jpg);
+    height: fit-content;
+    background-size: cover;
+}
+.filtr{
+    height: fit-content;
+    background-color: #ab6d25;
+    background: linear-gradient(gray , lightgray,#ab6d25);
+    padding-top:25px;
+}
+#calendar1{
+    padding: 5vw;
+    border: 5px solid #ab6d25;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px inset #ab6d25, -5px -5px 5px 5px inset#ab6d25 ;
+    font-family: worksans;
+    width: fit-content;
+    margin: auto;
+    
+}
+#calendar1 td{
+padding: 20px;
+font-size: 25px;
+}
+#calendar1 caption{
+    font-size: 35px;
+}
+#calendar2{
+    padding: 5vw;
+    border: 5px solid#ab6d25;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px inset #ab6d25, -5px -5px 5px 5px inset#ab6d25 ;
+    font-family: worksans;
+    margin-left: 30%;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
+#calendar2 caption{
+font-size: 35px;
+}
+#calendar2 td{
+    padding: 2vw 1vw;
+    font-size: 25px;
+}
+@media(max-width:500px){
+    .poem{
+        margin-left: 10px;
+        width: 70vw;
+    }
+    .poem2{
+        margin-left: 10px;
+        width:70vw;
+    }
+}
+.signs{
+    background-image: url(lake.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 5vw;
+    position: relative ;
+}
+.wrap{ 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 20px;
+    width: 55%;
+    margin-left: 50%;
+    margin-top: 45vh;
+}
+.signs ul{
+    font-size: 2vw;
+    line-height: 1;
+    font-family: worksans;
+    list-style-type: none;
+    padding: 50px;
+    border-radius: 20px;
+}
+li:nth-child(1){
+    background-image: url(rain.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-position: auto center;
+    height:fit-content;
+}
+li:nth-child(2){
+    background-image: url(fruits.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-position: auto center;
+}
+li:nth-child(3){
+    background-image: url(leaf\ fall.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-position: auto center;
+}
+li:nth-child(4){
+    background-image: url(fireplace.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-position: auto center;
+}
+li:last-child{
+    background-image: url(turkey.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-position: auto center;
+}
+li{
+    padding-bottom: 15px;
+    display:flex
+}
+audio{
+    width: 100px;
+}
+#boat{
+    position:absolute;
+    top: 95vh;
+    left: 20%;
+}
+.boatanim{
+    animation:floating 20s linear forwards
+}
+@keyframes floating{
+from{
+    transform: translateX(0) rotate(0);
+}
+30%{transform: translateX(-10vw) rotateY(85deg)scale(0.9);;
+}
+60%{transform: translateY(-5vh) rotateY(80deg) scale(0.5);
+}
+to{
+    transform: translateY(-7vh) rotate(0) scale(0.1);
+}
+}
+@media(max-width:1000px){
+    .signs{
+        background-size: contain;
+    }
+header{
+        height: 1000px;
+        background-repeat:no-repeat
+    }
+}
+ 
